@@ -1,10 +1,7 @@
 import type { Aircraft } from '@/types';
 
-// Image URLs configuration
-// Local images for successfully downloaded photos (avoiding CORS/ORB issues)
-// Wikimedia Commons thumb URLs for remaining aircraft (public domain / free license)
+// Image URLs configuration - All images stored locally in public/images/
 const L = '/images'; // local images path
-const W = 'https://upload.wikimedia.org/wikipedia/commons/thumb';
 
 export const aircraftData: Aircraft[] = [
   // 第一代战机
@@ -33,9 +30,9 @@ export const aircraftData: Aircraft[] = [
       height: '4.51 m',
     },
     photos: {
-      frontView: `${W}/5/50/North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg/800px-North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg`,
-      sideView: `${W}/5/50/North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg/800px-North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg`,
-      topView: `${W}/5/50/North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg/800px-North_American_F-86A-5-NA_Sabre_49-1146%2C_USA_-_Air_Force_AN1574654.jpg`,
+      frontView: `${L}/f-86-side.jpg`,
+      sideView: `${L}/f-86-side.jpg`,
+      topView: `${L}/f-86-top.jpg`,
       additionalViews: [],
     },
   },
@@ -64,9 +61,9 @@ export const aircraftData: Aircraft[] = [
       height: '3.70 m',
     },
     photos: {
-      frontView: `${W}/6/60/MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg/800px-MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg`,
-      sideView: `${W}/6/60/MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg/800px-MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg`,
-      topView: `${W}/6/60/MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg/800px-MiG-15%2C_MiG-17_and_MiG-19_of_the_Polish_Air_Force_in_flight%2C_1969.jpg`,
+      frontView: `${L}/mig-15-side.jpg`,
+      sideView: `${L}/mig-15-side.jpg`,
+      topView: `${L}/mig-15-top.jpg`,
       additionalViews: [],
     },
   },
@@ -96,9 +93,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.02 m',
     },
     photos: {
-      frontView: `${W}/0/01/McDonnell_F-4B_Phantom_II_of_VF-111_in_flight%2C_in_1973.jpg/800px-McDonnell_F-4B_Phantom_II_of_VF-111_in_flight%2C_in_1973.jpg`,
-      sideView: `${W}/0/01/McDonnell_F-4B_Phantom_II_of_VF-111_in_flight%2C_in_1973.jpg/800px-McDonnell_F-4B_Phantom_II_of_VF-111_in_flight%2C_in_1973.jpg`,
-      topView: `${W}/3/30/F-4S_Phantom_II_of_VF-151_in_flight.jpg/800px-F-4S_Phantom_II_of_VF-151_in_flight.jpg`,
+      frontView: `${L}/f-4-side.jpg`,
+      sideView: `${L}/f-4-side.jpg`,
+      topView: `${L}/f-4-top.jpg`,
       additionalViews: [],
     },
   },
@@ -127,9 +124,9 @@ export const aircraftData: Aircraft[] = [
       height: '4.10 m',
     },
     photos: {
-      frontView: `${W}/a/a6/MiG-21.jpg/800px-MiG-21.jpg`,
-      sideView: `${W}/a/a6/MiG-21.jpg/800px-MiG-21.jpg`,
-      topView: `${W}/8/8e/Croatian_Mig-21_2008.jpg/800px-Croatian_Mig-21_2008.jpg`,
+      frontView: `${L}/mig-21-side.jpg`,
+      sideView: `${L}/mig-21-side.jpg`,
+      topView: `${L}/mig-21-top.jpg`,
       additionalViews: [],
     },
   },
@@ -158,9 +155,9 @@ export const aircraftData: Aircraft[] = [
       height: '4.10 m',
     },
     photos: {
-      frontView: `${W}/b/b0/F-7B_of_Bangladesh_Air_Force.jpg/800px-F-7B_of_Bangladesh_Air_Force.jpg`,
-      sideView: `${W}/b/b0/F-7B_of_Bangladesh_Air_Force.jpg/800px-F-7B_of_Bangladesh_Air_Force.jpg`,
-      topView: `${W}/b/b0/F-7B_of_Bangladesh_Air_Force.jpg/800px-F-7B_of_Bangladesh_Air_Force.jpg`,
+      frontView: `${L}/j-7-side.jpg`,
+      sideView: `${L}/j-7-side.jpg`,
+      topView: `${L}/j-7-top.jpg`,
       additionalViews: [],
     },
   },
@@ -190,9 +187,9 @@ export const aircraftData: Aircraft[] = [
       height: '4.88 m',
     },
     photos: {
-      frontView: `${W}/f/fe/F-14_Tomcat_sonic_boom.ogv/250px--F-14_Tomcat_sonic_boom.ogv.jpg`,
-      sideView: `${W}/f/fe/F-14_Tomcat_sonic_boom.ogv/250px--F-14_Tomcat_sonic_boom.ogv.jpg`,
-      topView: `${W}/f/fe/F-14_Tomcat_sonic_boom.ogv/250px--F-14_Tomcat_sonic_boom.ogv.jpg`,
+      frontView: `${L}/f-14-side.jpg`,
+      sideView: `${L}/f-14-side.jpg`,
+      topView: `${L}/f-14-top.jpg`,
       additionalViews: [],
     },
   },
@@ -220,9 +217,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.63 m',
     },
     photos: {
-      frontView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
-      sideView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
-      topView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
+      frontView: `${L}/f-15-side.jpg`,
+      sideView: `${L}/f-15-side.jpg`,
+      topView: `${L}/f-15-top.jpg`,
       additionalViews: [],
     },
   },
@@ -250,9 +247,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.09 m',
     },
     photos: {
-      frontView: `${W}/0/04/USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg/800px-USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg`,
-      sideView: `${W}/0/04/USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg/800px-USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg`,
-      topView: `${W}/0/04/USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg/800px-USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg`,
+      frontView: `${L}/f-16-side.jpg`,
+      sideView: `${L}/f-16-side.jpg`,
+      topView: `${L}/f-16-top.jpg`,
       additionalViews: [],
     },
   },
@@ -280,9 +277,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.93 m',
     },
     photos: {
-      frontView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      sideView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      topView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
+      frontView: `${L}/su-27-side.jpg`,
+      sideView: `${L}/su-27-side.jpg`,
+      topView: `${L}/su-27-top.jpg`,
       additionalViews: [],
     },
   },
@@ -311,9 +308,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.41 m',
     },
     photos: {
-      frontView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      sideView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      topView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
+      frontView: `${L}/j-8-side.jpg`,
+      sideView: `${L}/j-8-side.jpg`,
+      topView: `${L}/j-8-top.jpg`,
       additionalViews: [],
     },
   },
@@ -342,9 +339,9 @@ export const aircraftData: Aircraft[] = [
       height: '4.88 m',
     },
     photos: {
-      frontView: `${W}/5/56/FA-18F_Super_Hornet_VFA-211_overhead.jpg/800px-FA-18F_Super_Hornet_VFA-211_overhead.jpg`,
-      sideView: `${W}/5/56/FA-18F_Super_Hornet_VFA-211_overhead.jpg/800px-FA-18F_Super_Hornet_VFA-211_overhead.jpg`,
-      topView: `${W}/5/56/FA-18F_Super_Hornet_VFA-211_overhead.jpg/800px-FA-18F_Super_Hornet_VFA-211_overhead.jpg`,
+      frontView: `${L}/fa-18ef-side.jpg`,
+      sideView: `${L}/fa-18ef-side.jpg`,
+      topView: `${L}/fa-18ef-top.jpg`,
       additionalViews: [],
     },
   },
@@ -372,9 +369,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.34 m',
     },
     photos: {
-      frontView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
-      sideView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
-      topView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
+      frontView: `${L}/rafale-side.jpg`,
+      sideView: `${L}/rafale-side.jpg`,
+      topView: `${L}/rafale-top.jpg`,
       additionalViews: [],
     },
   },
@@ -402,9 +399,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.28 m',
     },
     photos: {
-      frontView: `${W}/3/3c/RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg/800px-RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg`,
-      sideView: `${W}/3/3c/RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg/800px-RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg`,
-      topView: `${W}/3/3c/RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg/800px-RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg`,
+      frontView: `${L}/eurofighter-side.jpg`,
+      sideView: `${L}/eurofighter-side.jpg`,
+      topView: `${L}/eurofighter-top.jpg`,
       additionalViews: [],
     },
   },
@@ -432,9 +429,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.43 m',
     },
     photos: {
-      frontView: `${W}/c/c0/J-10_Fighter_aircraft_20170902.jpg/800px-J-10_Fighter_aircraft_20170902.jpg`,
-      sideView: `${W}/c/c0/J-10_Fighter_aircraft_20170902.jpg/800px-J-10_Fighter_aircraft_20170902.jpg`,
-      topView: `${W}/c/c0/J-10_Fighter_aircraft_20170902.jpg/800px-J-10_Fighter_aircraft_20170902.jpg`,
+      frontView: `${L}/j-10-side.jpg`,
+      sideView: `${L}/j-10-side.jpg`,
+      topView: `${L}/j-10-top.jpg`,
       additionalViews: [],
     },
   },
@@ -462,9 +459,9 @@ export const aircraftData: Aircraft[] = [
       height: '5.90 m',
     },
     photos: {
-      frontView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      sideView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
-      topView: `${W}/8/85/Su-27_at_MAKS-2005.jpg/800px-Su-27_at_MAKS-2005.jpg`,
+      frontView: `${L}/j-16-side.jpg`,
+      sideView: `${L}/j-16-side.jpg`,
+      topView: `${L}/j-16-top.jpg`,
       additionalViews: [],
     },
   },
@@ -525,7 +522,7 @@ export const aircraftData: Aircraft[] = [
     photos: {
       frontView: `${L}/f-35-side.jpg`,
       sideView: `${L}/f-35-side.jpg`,
-      topView: `${L}/f-35-side.jpg`,
+      topView: `${L}/f-35-top.jpg`,
       additionalViews: [],
     },
   },
@@ -585,7 +582,7 @@ export const aircraftData: Aircraft[] = [
     photos: {
       frontView: `${L}/j-35-side.jpg`,
       sideView: `${L}/j-35-side.jpg`,
-      topView: `${L}/j-35-side.jpg`,
+      topView: `${L}/j-35-top.jpg`,
       additionalViews: [],
     },
   },
@@ -644,9 +641,9 @@ export const aircraftData: Aircraft[] = [
       height: '（保密）',
     },
     photos: {
-      frontView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
-      sideView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
-      topView: `${W}/4/43/F-15EX_Eagle_II.jpg/800px-F-15EX_Eagle_II.jpg`,
+      frontView: `${L}/ngad-side.jpg`,
+      sideView: `${L}/ngad-side.jpg`,
+      topView: `${L}/ngad-top.jpg`,
       additionalViews: [],
     },
   },
@@ -674,9 +671,9 @@ export const aircraftData: Aircraft[] = [
       height: '（保密）',
     },
     photos: {
-      frontView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
-      sideView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
-      topView: `${W}/6/6b/Dassault_Rafale_silhouette-top.svg/800px-Dassault_Rafale_silhouette-top.svg.png`,
+      frontView: `${L}/fcas-side.jpg`,
+      sideView: `${L}/fcas-side.jpg`,
+      topView: `${L}/fcas-top.jpg`,
       additionalViews: [],
     },
   },
