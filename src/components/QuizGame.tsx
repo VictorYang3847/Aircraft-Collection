@@ -377,7 +377,14 @@ export default function QuizGame() {
           <div className="relative">
             <div className="w-full h-64 sm:h-80 bg-military-900 flex items-center justify-center overflow-hidden">
               <img
-                src={q.aircraft.photos.frontView || q.aircraft.photos.sideView}
+                src={(() => {
+                  // Randomly pick between sideView and topView for variety
+                  const photos = q.aircraft.photos;
+                  const views = [photos.sideView, photos.topView, photos.frontView].filter(Boolean);
+                  // Use a deterministic but varied selection based on question index
+                  const idx = currentQuestion % views.length;
+                  return views[idx] || views[0];
+                })()}
                 alt="猜战机"
                 className="w-full h-full object-contain"
                 loading="lazy"
