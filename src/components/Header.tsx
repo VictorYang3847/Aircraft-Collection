@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Plane, Search } from 'lucide-react';
+import { Plane, Search, Gamepad2 } from 'lucide-react';
 
 export default function Header() {
   const location = useLocation();
@@ -42,6 +42,17 @@ export default function Header() {
             >
               <Search className="w-4 h-4" />
               搜索战机
+            </Link>
+            <Link
+              to="/quiz"
+              className={`flex items-center gap-2 text-sm font-medium transition-colors px-3 py-1.5 rounded-lg ${
+                location.pathname === '/quiz'
+                  ? 'text-orange-400 bg-orange-400/10'
+                  : 'text-gray-400 hover:text-white hover:bg-military-800'
+              }`}
+            >
+              <Gamepad2 className="w-4 h-4" />
+              猜战机
             </Link>
           </nav>
         </div>

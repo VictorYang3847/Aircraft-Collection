@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import HomePage from '@/pages/HomePage';
 import AircraftList from '@/pages/AircraftList';
 import AircraftDetail from '@/pages/AircraftDetail';
+import QuizPage from '@/pages/QuizPage';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/aircraft" element={<AircraftList />} />
           <Route path="/aircraft/:id" element={<AircraftDetail />} />
+          <Route path="/quiz" element={<QuizPage />} />
         </Routes>
       </div>
     </HashRouter>
