@@ -1,6 +1,7 @@
 import type { Aircraft } from '@/types';
 
 // Image URLs configuration - All images stored locally in public/images/
+// frontView uses placeholder.jpg for all aircraft - please replace with actual front view images
 const L = '/images'; // local images path
 
 export const aircraftData: Aircraft[] = [
@@ -30,7 +31,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.51 m',
     },
     photos: {
-      frontView: `${L}/f-86-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-86-side.jpg`,
       topView: `${L}/f-86-top.jpg`,
       additionalViews: [],
@@ -61,7 +62,7 @@ export const aircraftData: Aircraft[] = [
       height: '3.70 m',
     },
     photos: {
-      frontView: `${L}/mig-15-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/mig-15-side.jpg`,
       topView: `${L}/mig-15-top.jpg`,
       additionalViews: [],
@@ -93,7 +94,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.02 m',
     },
     photos: {
-      frontView: `${L}/f-4-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-4-side.jpg`,
       topView: `${L}/f-4-top.jpg`,
       additionalViews: [],
@@ -124,7 +125,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.10 m',
     },
     photos: {
-      frontView: `${L}/mig-21-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/mig-21-side.jpg`,
       topView: `${L}/mig-21-top.jpg`,
       additionalViews: [],
@@ -155,7 +156,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.10 m',
     },
     photos: {
-      frontView: `${L}/j-7-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-7-side.jpg`,
       topView: `${L}/j-7-top.jpg`,
       additionalViews: [],
@@ -187,7 +188,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.88 m',
     },
     photos: {
-      frontView: `${L}/f-14-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-14-side.jpg`,
       topView: `${L}/f-14-top.jpg`,
       additionalViews: [],
@@ -217,7 +218,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.63 m',
     },
     photos: {
-      frontView: `${L}/f-15-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-15-side.jpg`,
       topView: `${L}/f-15-top.jpg`,
       additionalViews: [],
@@ -247,7 +248,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.09 m',
     },
     photos: {
-      frontView: `${L}/f-16-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-16-side.jpg`,
       topView: `${L}/f-16-top.jpg`,
       additionalViews: [],
@@ -277,7 +278,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.93 m',
     },
     photos: {
-      frontView: `${L}/su-27-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/su-27-side.jpg`,
       topView: `${L}/su-27-top.jpg`,
       additionalViews: [],
@@ -308,7 +309,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.41 m',
     },
     photos: {
-      frontView: `${L}/j-8-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-8-side.jpg`,
       topView: `${L}/j-8-top.jpg`,
       additionalViews: [],
@@ -339,7 +340,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.88 m',
     },
     photos: {
-      frontView: `${L}/fa-18ef-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/fa-18ef-side.jpg`,
       topView: `${L}/fa-18ef-top.jpg`,
       additionalViews: [],
@@ -369,7 +370,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.34 m',
     },
     photos: {
-      frontView: `${L}/rafale-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/rafale-side.jpg`,
       topView: `${L}/rafale-top.jpg`,
       additionalViews: [],
@@ -399,7 +400,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.28 m',
     },
     photos: {
-      frontView: `${L}/eurofighter-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/eurofighter-side.jpg`,
       topView: `${L}/eurofighter-top.jpg`,
       additionalViews: [],
@@ -429,7 +430,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.43 m',
     },
     photos: {
-      frontView: `${L}/j-10-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-10-side.jpg`,
       topView: `${L}/j-10-top.jpg`,
       additionalViews: [],
@@ -459,7 +460,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.90 m',
     },
     photos: {
-      frontView: `${L}/j-16-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-16-side.jpg`,
       topView: `${L}/j-16-top.jpg`,
       additionalViews: [],
@@ -490,7 +491,7 @@ export const aircraftData: Aircraft[] = [
       height: '5.08 m',
     },
     photos: {
-      frontView: `${L}/f-22-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-22-side.jpg`,
       topView: `${L}/f-22-top.jpg`,
       additionalViews: [],
@@ -520,7 +521,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.38 m',
     },
     photos: {
-      frontView: `${L}/f-35-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/f-35-side.jpg`,
       topView: `${L}/f-35-top.jpg`,
       additionalViews: [],
@@ -550,7 +551,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.69 m',
     },
     photos: {
-      frontView: `${L}/j-20-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-20-side.jpg`,
       topView: `${L}/j-20-top.jpg`,
       additionalViews: [],
@@ -580,7 +581,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.60 m',
     },
     photos: {
-      frontView: `${L}/j-35-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/j-35-side.jpg`,
       topView: `${L}/j-35-top.jpg`,
       additionalViews: [],
@@ -610,7 +611,7 @@ export const aircraftData: Aircraft[] = [
       height: '4.74 m',
     },
     photos: {
-      frontView: `${L}/su-57-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/su-57-side.jpg`,
       topView: `${L}/su-57-top.jpg`,
       additionalViews: [],
@@ -641,7 +642,7 @@ export const aircraftData: Aircraft[] = [
       height: '（保密）',
     },
     photos: {
-      frontView: `${L}/ngad-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/ngad-side.jpg`,
       topView: `${L}/ngad-top.jpg`,
       additionalViews: [],
@@ -671,7 +672,7 @@ export const aircraftData: Aircraft[] = [
       height: '（保密）',
     },
     photos: {
-      frontView: `${L}/fcas-side.jpg`,
+      frontView: `${L}/placeholder.jpg`,
       sideView: `${L}/fcas-side.jpg`,
       topView: `${L}/fcas-top.jpg`,
       additionalViews: [],
