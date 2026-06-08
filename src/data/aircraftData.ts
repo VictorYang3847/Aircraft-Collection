@@ -348,6 +348,7 @@ export const aircraftData: Aircraft[] = [
   },
   {
     id: 'rafale',
+    name: '阵风',
     nameEn: 'Dassault Rafale',
     generation: 4,
     country: '法国',
